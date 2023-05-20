@@ -2,6 +2,7 @@ function fetchMovies() {
     const directorName = document.getElementById("directorName").value;
     const apiKey = "978e5c7a7fe49a1a6496279638088e9c"; // Replace with your TMDb API key
     const apiUrl = `https://api.themoviedb.org/3/search/person?api_key=${apiKey}&query=${directorName}`;
+    
     fetch(apiUrl)
       .then(response => response.json())
       .then(data => {
