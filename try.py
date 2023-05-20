@@ -5,9 +5,6 @@ base_url = "https://api.themoviedb.org/3/movie/550"  # Example API endpoint, rep
 
 params = {
         "api_key": api_key,
-        "with_people": "5256",  # Christopher Nolan's TMDb person ID
-        "sort_by": "vote_average.desc",
-        "vote_count.gte": 1000  # Minimum vote count threshold
     }
 
 response = requests.get(base_url, params=params)
