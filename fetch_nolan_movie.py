@@ -1,9 +1,9 @@
-import requests
+#import requests
 
-API_KEY = "YOUR_TMDB_API_KEY"
+API_KEY = "978e5c7a7fe49a1a6496279638088e9c"
 
 def fetch_movies():
-    url = f"https://api.themoviedb.org/3/discover/movie"
+    url = f"https://api.themoviedb.org/3/movie/11?api_key=978e5c7a7fe49a1a6496279638088e9c"
     params = {
         "api_key": API_KEY,
         "language": "en-US",
