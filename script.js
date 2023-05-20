@@ -15,7 +15,7 @@ function fetchMovies() {
             .then(response => response.json())
             .then(movieData => {
               if (movieData.results.length > 0) {
-                const movies = movieData.results.slice(0, 7); // Display only top 5 movies
+                const movies = movieData.results.slice(0, 30); // Display only top 30 movies
                 let output = "<h2>Top Movies:</h2>";
                 output += `<div><img src="https://image.tmdb.org/t/p/w200/${director.profile_path}" alt="${director.name}"></div>`; // Display director's image
                 output += "<ul>";
